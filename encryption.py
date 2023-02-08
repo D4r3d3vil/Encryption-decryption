@@ -1,4 +1,4 @@
-import string, random
+import random
 text = input("enter text: ")
 charstr = text
 fingerprint = []
