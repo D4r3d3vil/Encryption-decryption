@@ -1,13 +1,12 @@
 import string, random
 text = input("enter text: ")
-charstr = string.ascii_letters + "1234567890!@#$%^&*()-_=+[]{}\|;:',<.>/?`~ " + '"'
+charstr = text
 fingerprint = []
 chars = []
 encrypted_text = []
 for i in range(len(charstr)):
     chars.append(charstr[i])
 for tr in range(len(charstr)):
-    if charstr[tr] in text:
         rnum = random.random()
         fingerprint.append(rnum)
         fingerprint.append(charstr[tr])
